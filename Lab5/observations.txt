@@ -1,0 +1,3 @@
+- From the results obtained from the Chi Square Test of 4 methods (Additive,Multiplicative,Mixed and Inbuilt). Additive has the best result when the initial seed is 1 since it is incremental and if the increment is also 1 then all numbers between 0 to 999 will be generated and thus the observed and expected value will be same and thus chi square value will be 0, indicating that it is the best result.
+- Random Number Generation using the inbuilt function of python showed variating results as it randomly generates number in a specified range and thus can have different chi square value in each iteration.
+- Multiplicative and Mixed produces almost nearly similar results and thus chi square values are similar in some cases.
