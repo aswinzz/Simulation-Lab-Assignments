@@ -1,0 +1,42 @@
+The problem is to be simulated for n days where on each day their is some demand for the merchandise.
+
+You have to find the cost for policy (which means given values of P and Q). The stock on first day is 115 (given in above pic).
+
+Please note that new stocks are ordered whenever the stock is less than or equal to P. Value of Q will always be greater than P.
+
+Readability of code will carry 20% weightage of marks.
+
+Dry run for given sample case initial inventory (given) = 115
+
+day	demand	stocks left after fulfilling demand	cost of inventory	if ordered	total cost
+1	60	55	55 * 0.75	55+0 < 100, ordered	55 * 0.75 + 75
+2	50	5	5 * 0.75	5+150 > 100	5 * 0.75
+3	60	0	55 * 18	0+150 = 100	55 * 18
+4	70	80	80 * 0.75	80+0 < 100, ordered	80 * 0.75 + 75
+5	10	70	70 * 0.75	70+150 > 100	70 * 0.75
+55 * 0.75 + 75 + 5 * 0.75 + 55 * 18 + 80 * 0.75 + 75 + 70 * 0.75
+= 1297.5
+Input Format
+
+First line contains the number a n - the days you have to run the simulation.
+
+Second line contains a pair of integers indicating the policy - P and Q.
+
+Third line contains n integers which tells the demand for merchandise on each day.
+
+Constraints
+
+None
+
+Output Format
+
+Output is the cost of management of inventory for given policy.
+
+Sample Input 0
+
+5
+100 150
+60 50 60 70 10
+Sample Output 0
+
+1297.5
